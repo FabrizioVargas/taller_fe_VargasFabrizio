@@ -1,0 +1,75 @@
+.contacto-section {
+  padding: 5rem 2rem;
+  background-color: var(--bg-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.subtitulo {
+  color: var(--primary-color);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.info-texto h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.info-texto p {
+  color: #a0a7b5;
+  font-size: 1.1rem;
+}
+
+.tarjetas-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--bg-card);
+  padding: 1.2rem 1.8rem;
+  border-radius: 10px;
+  border: 1px solid #1e223d;
+  transition: border-color 0.3s;
+}
+
+.card-info:hover {
+  border-color: var(--primary-color);
+}
+
+.card-info .icon {
+  font-size: 1.8rem;
+}
+
+.card-info h3 {
+  margin: 0 0 0.2rem 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.card-info p {
+  margin: 0;
+  color: #a0a7b5;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

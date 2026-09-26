@@ -1,0 +1,115 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(10, 10, 18, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+  padding: 1rem 2rem;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+
+.highlight {
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #a0a7b5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00f0ff;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+/* Ocultar botón hamburguesa en PC */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #00f0ff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #00f0ff;
+}
+
+/* --- ADAPTACIÓN PARA CELULAR --- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1.2rem;
+  }
+
+  /* Mostrar botón hamburguesa */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Ocultar menú en móvil por defecto */
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 10, 18, 0.98);
+    border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease;
+    padding: 0 1.5rem;
+  }
+
+  /* Clase que activa el despliegue al dar clic */
+  .nav-menu.active {
+    max-height: 300px;
+    padding: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,24 @@
+<header class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="logo">
+      NEXUS<span class="highlight">GAMING</span>
+    </a>
+
+    <!-- Botón hamburguesa visible solo en celular -->
+    <button class="hamburger-btn" (click)="toggleMenu()" aria-label="Abrir Menú">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <nav class="nav-menu" [class.active]="menuAbierto">
+      <ul class="nav-links">
+        <li><a href="#hero" (click)="cerrarMenu()">Inicio</a></li>
+        <li><a href="#nosotros" (click)="cerrarMenu()">Nosotros</a></li>
+        <li><a href="#productos" (click)="cerrarMenu()">Equipamiento</a></li>
+        <li><a href="#contacto" (click)="cerrarMenu()">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

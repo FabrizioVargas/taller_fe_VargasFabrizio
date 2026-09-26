@@ -1,0 +1,33 @@
+.promocion-section {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--secondary-color), #2d006b);
+  text-align: center;
+  color: #fff;
+  margin: 2rem 0;
+}
+
+.promo-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.promo-box p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-promo {
+  padding: 0.8rem 2rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-promo:hover {
+  background-color: var(--primary-color);
+}

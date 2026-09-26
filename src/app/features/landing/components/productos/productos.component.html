@@ -1,0 +1,17 @@
+<section id="productos" class="productos-section">
+  <h2>EQUIPAMIENTO DESTACADO</h2>
+  <div class="grid-productos">
+    <div class="card" *ngFor="let prod of productos">
+      <img [src]="prod.imagen" [alt]="prod.nombre">
+      <div class="card-body">
+        <span class="categoria">{{ prod.categoria }}</span>
+        <h3>{{ prod.nombre }}</h3>
+        <p>{{ prod.descripcion }}</p>
+        <div class="card-footer">
+          <span class="precio">${{ prod.precio }}</span>
+          <button class="btn-buy">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
